@@ -1,0 +1,94 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admiro admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Admiro admin template, best javascript admin, dashboard template, bootstrap admin template, responsive admin template, web app">
+    <meta name="author" content="">
+    <title>Admiro - Premium Admin Template</title>
+    <!-- Favicon icon-->
+    <link rel="icon" href="~/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon">
+    <!-- Flag icon css -->
+    <link rel="stylesheet" href="~/css/flag-icon.css">
+    <!-- iconly-icon-->
+    <link rel="stylesheet" href="~/css/iconly-icon.css">
+    <link rel="stylesheet" href="/css/bulk-style.css">
+    <!-- iconly-icon-->
+    <link rel="stylesheet" href="~/css/themify.css">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="~/css/fontawesome-min.css">
+    <!-- Whether Icon css-->
+    <link rel="stylesheet" type="text/css" href="~/css/weather-icons.min.css">
+    <!-- App css -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <link id="color" rel="stylesheet" href="~/css/color-1.css" media="screen">
+</head>
+<body>
+    <!-- tap on top starts-->
+    <div class="tap-top"><i class="iconly-Arrow-Up icli"></i></div>
+    <!-- tap on tap ends-->
+    <!-- loader-->
+    <div class="loader-wrapper">
+        <div class="loader"><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
+    <!-- login page start-->
+    <div class="container-fluid p-0">
+        <div class="row m-0">
+            <div class="col-12 p-0">
+                <div class="login-card login-dark">
+                    <div>
+                        <div><a class="logo" href="index.html"><img class="img-fluid for-light m-auto" src="~/images/logo1.png" alt="looginpage"><img class="img-fluid for-dark" src="~/images/logo-dark.png" alt="logo"></a></div>
+                        <div class="login-main">
+                             @using (Html.BeginForm("","",FormMethod.Post, new { @class = "theme-form" })){
+                            <h2 class="text-center">Sign in to account</h2>
+                            <br />
+                            <div class="form-group">
+                                <label class="col-form-label">Email Address</label>
+                                <input class="form-control" type="email" required="" placeholder="Test@gmail.com">
+                            </div>
+                            <div class="form-group">
+                                <label class="col-form-label">Password</label>
+                                <div class="form-input position-relative">
+                                    <input class="form-control" type="password" name="login[password]" required="" placeholder="*********">
+                                    <div class="show-hide"><span class="show">                         </span></div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-0 checkbox-checked">
+                                <div class="form-check checkbox-solid-info">
+                                    <input class="form-check-input" id="solid6" type="checkbox">
+                                    <label class="form-check-label" for="solid6">Remember password</label>
+                                </div>
+                                <br />
+                                <a class="link" href="forget-password.html">Forgot password?</a>
+                                <div class="text-end mt-3">
+                                    <button class="btn btn-primary btn-block w-100" type="submit">Sign in                 </button>
+                                </div>
+                            </div>
+                            <p class="mt-4 mb-0 text-center">Don't have account?<a class="ms-2" href="sign-up.html">Create Account</a></p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jquery-->
+        <script src="~/js/jquery.min.js"></script>
+        <!-- bootstrap js-->
+        <script src="~/js/bootstrap.bundle.min.js" defer=""></script>
+        <script src="~/js/popper.min.js" defer=""></script>
+        <!--fontawesome-->
+        <script src="~/js/fontawesome-min.js"></script>
+        <!-- password_show-->
+        <script src="~/js/password.js"></script>
+        <!-- custom script -->
+        <script src="~/js/script.js"></script>
+    </div>
+</body>
+</html>
